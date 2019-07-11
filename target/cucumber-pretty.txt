@@ -1,0 +1,40 @@
+@FeedBack
+Feature: FeedBack
+
+  @FeedBack @Scenario
+  Scenario: Submit the Provide feedback without filling the form from the home page [90m# src/test/resources/smoke_features/feedback.feature:5[0m
+    [32mGiven [0m[32mEnvironment [0m[32m[1mCOMP_HOME_PAGE[0m                                                [90m# FeddBackStep.Environment(String)[0m
+    [31mAnd [0m[31mClick on provide feed back button[0m                                           [90m# FeddBackStep.Click_on_provide_feed_back_button()[0m
+      [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'WINDOWS-ANAA9TN', ip: '192.168.85.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\SANZED~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: d799acb19d9de310a4e510552169ccb1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
+	at net.thucydides.core.webdriver.WebDriverFacade.executeScript(WebDriverFacade.java:411)
+	at gov.gsa.sam.stepdefinition.FeddBackStep.Click_on_provide_feed_back_button(FeddBackStep.java:58)
+	at ✽.Click on provide feed back button(src/test/resources/smoke_features/feedback.feature:7)
+[0m
+    [36mThen [0m[36mCheck the three question[0m                                                   [90m# FeddBackStep.Check_the_three_question()[0m
+    [36mThen [0m[36muser click on submit button[0m                                                [90m# FeddBackStep.user_click_on_submit_button()[0m
+    [36mAnd [0m[36mClick on learning center link[0m                                               [90m# FeddBackStep.Click_on_learn_center_link()[0m
+    [36mAnd [0m[36mNavigate into New to beta.SAM.gov page[0m                                      [90m# FeddBackStep.Navigate_into_New_to_betaSAMgov_page()[0m
+    [36mAnd [0m[36mBrowser close[0m                                                               [90m# FeddBackStep.Browser_close()[0m
+
+  @FeedBack @Scenario
+  Scenario: Cancel the Provide feedback without filling the form from the home page [90m# src/test/resources/smoke_features/feedback.feature:15[0m
